@@ -94,7 +94,7 @@ function CustomerPage() {
 
         // Get this customer's latest ticket
         const response = await fetch(
-          `/api/queue/${ticket.id}`
+         `https://qms-a-backend.onrender.com/api/queue/${ticket.id}`
         );
 
         if (response.ok) {
@@ -106,7 +106,7 @@ function CustomerPage() {
 
           // Get all queue tickets
           const queueResponse = await fetch(
-            "/api/queue"
+           "https://qms-a-backend.onrender.com/api/queue"
           );
 
           if (queueResponse.ok) {
@@ -193,7 +193,7 @@ function CustomerPage() {
     try {
 
       const response = await fetch(
-        "/api/queue",
+      "https://qms-a-backend.onrender.com/api/queue",
         {
           method: "POST",
 
