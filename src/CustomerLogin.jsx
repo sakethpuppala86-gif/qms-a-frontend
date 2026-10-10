@@ -13,7 +13,7 @@ function CustomerLogin() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/auth/login",
+        "https://qms-a-backend.onrender.com/api/auth/login",
         {
           method: "POST",
 
