@@ -94,7 +94,7 @@ function CustomerPage() {
 
         // Get this customer's latest ticket
         const response = await fetch(
-          `http://localhost:8080/api/queue/${ticket.id}`
+          `/api/queue/${ticket.id}`
         );
 
         if (response.ok) {
@@ -106,7 +106,7 @@ function CustomerPage() {
 
           // Get all queue tickets
           const queueResponse = await fetch(
-            "http://localhost:8080/api/queue"
+            "/api/queue"
           );
 
           if (queueResponse.ok) {
@@ -193,7 +193,7 @@ function CustomerPage() {
     try {
 
       const response = await fetch(
-        "http://localhost:8080/api/queue",
+        "/api/queue",
         {
           method: "POST",
 
