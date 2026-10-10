@@ -21,7 +21,7 @@ function StaffDashboard() {
   const fetchTickets = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/queue?t=${Date.now()}`,
+        `https://qms-a-backend.onrender.com/api/queue?t=${Date.now()}`,
         {
           method: "GET",
           cache: "no-store",
