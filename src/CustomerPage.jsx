@@ -40,7 +40,7 @@ function CustomerPage() {
       try {
 
         const response = await fetch(
-          "http://localhost:8080/api/queue"
+          "https://qms-a-backend.onrender.com/api/queue"
         );
 
         if (!response.ok) {
